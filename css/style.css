@@ -235,10 +235,6 @@ body{
   color: #3a383d;
 }
 
-.menu-button{
-  display: none;
-}
-
 /* Responsive*/
 @media (max-width: 760px){
   .play{
@@ -259,6 +255,10 @@ body{
     margin-left: 0px;
   }
 
+}
+
+.menu-button{
+  display: none;
 }
 
 @media (max-width: 540px){
@@ -301,7 +301,7 @@ body{
   }
 
   .menu-button-active{
-    height: 0;
+    height: 0px;
   }
 
   .menu-button-active:before{
@@ -356,7 +356,7 @@ body{
   }
 
   .swiper-container{
-    width: 80px;
+    width: 80%;
   }
 
   .main-content{
