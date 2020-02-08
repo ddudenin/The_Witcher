@@ -104,7 +104,7 @@ body{
 .right-col
 {
     width: 50%;
-    min-width: 445px;
+    min-width: 350px;
     height: auto;
     box-sizing: border-box;
     float: left;
@@ -534,7 +534,7 @@ body{
 
 @media (max-width: 360px){
   .series-content{
-    max-width: 340px;
+    max-width: 300px;
   }
 
   .series-scr{
