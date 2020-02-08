@@ -34,13 +34,55 @@ radio.src = audio.src;
 PlayButton.addEventListener('click', function(){
   PlayImg.classList.toggle('img-display');
   PlayImg.classList.toggle('img-nodisplay');
+
   PauseImg.classList.toggle('img-display');
   PauseImg.classList.toggle('img-nodisplay');
+  
   if (radio.paused == true)
   {
     radio.play();
   }
   else{
     radio.pause();
+  }
+})
+
+var Button = document.querySelector('.button');
+var Link = document.querySelector('.menu-list');
+var Slider = document.querySelector('.swiper-wrapper');
+
+Button.addEventListener('click', function(){
+  if (radio.paused != true){
+   PlayImg.classList.toggle('img-display');
+   PlayImg.classList.toggle('img-nodisplay');
+  
+   PauseImg.classList.toggle('img-display');
+   PauseImg.classList.toggle('img-nodisplay');
+   
+   radio.pause();
+  }
+})
+
+Link.addEventListener('click', function(){
+  if (radio.paused != true){
+   PlayImg.classList.toggle('img-display');
+   PlayImg.classList.toggle('img-nodisplay');
+  
+   PauseImg.classList.toggle('img-display');
+   PauseImg.classList.toggle('img-nodisplay');
+   
+   radio.pause();
+  }
+})
+
+Slider.addEventListener('click', function(){
+  if (radio.paused != true){
+   PlayImg.classList.toggle('img-display');
+   PlayImg.classList.toggle('img-nodisplay');
+  
+   PauseImg.classList.toggle('img-display');
+   PauseImg.classList.toggle('img-nodisplay');
+   
+   radio.pause();
   }
 })
