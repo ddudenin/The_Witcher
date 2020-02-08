@@ -19,7 +19,7 @@ body{
   background-image: url('../img/background.jpg');
   background-repeat:  no-repeat;
   background-position:  top, right 20%;
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
 }
 
 .container{
