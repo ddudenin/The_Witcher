@@ -38,7 +38,7 @@ PlayButton.addEventListener('click', function(){
   PauseImg.classList.toggle('img-display');
   PauseImg.classList.toggle('img-nodisplay');
   
-  if (radio.paused == true)
+  if (radio.paused)
   {
     radio.play();
   }
@@ -51,20 +51,12 @@ var Button = document.querySelector('.button');
 var Link = document.querySelector('.menu-list');
 var Slider = document.querySelector('.swiper-wrapper');
 
-Button.addEventListener('click', function(){
-  if (radio.paused != true){
-   PlayImg.classList.toggle('img-display');
-   PlayImg.classList.toggle('img-nodisplay');
-  
-   PauseImg.classList.toggle('img-display');
-   PauseImg.classList.toggle('img-nodisplay');
-   
-   radio.pause();
-  }
-})
+Button.addEventListener('click', PauseAudio)
+Link.addEventListener('click', PauseAudio)
+Slider.addEventListener('click', PauseAudio)
 
-Link.addEventListener('click', function(){
-  if (radio.paused != true){
+function PauseAudio(){
+  if (!radio.paused){
    PlayImg.classList.toggle('img-display');
    PlayImg.classList.toggle('img-nodisplay');
   
@@ -73,16 +65,4 @@ Link.addEventListener('click', function(){
    
    radio.pause();
   }
-})
-
-Slider.addEventListener('click', function(){
-  if (radio.paused != true){
-   PlayImg.classList.toggle('img-display');
-   PlayImg.classList.toggle('img-nodisplay');
-  
-   PauseImg.classList.toggle('img-display');
-   PauseImg.classList.toggle('img-nodisplay');
-   
-   radio.pause();
-  }
-})
+}

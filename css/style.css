@@ -94,11 +94,28 @@ body{
 }
 
 .series-content{
-  max-width: 458px;
   font-size: 14px;
   line-height: 150%;
   text-align: justify;
-  max-width: 445px;
+  max-width: 1440px;
+}
+
+.left-col,
+.right-col
+{
+    width: 50%;
+    min-width: 445px;
+    height: auto;
+    box-sizing: border-box;
+    float: left;
+}
+
+.left-col{
+    padding-right: 10px;
+}
+
+.right-col{
+    padding-left: 10px;
 }
 
 .season-title{
@@ -114,34 +131,42 @@ body{
 }
 
 .series-description1{
+  max-width: 445px;
   animation-delay: 0.3s;
 }
 
 .series-description2{
+  max-width: 445px;
   animation-delay: 0.4s;
 }
 
 .series-description3{
+  max-width: 445px;
   animation-delay: 0.5s;
 }
 
 .series-description4{
+  max-width: 445px;
   animation-delay: 0.6s;
 }
 
 .series-description5{
+  max-width: 445px;
   animation-delay: 0.7s;
 }
 
 .series-description6{
+  max-width: 445px;
   animation-delay: 0.8s;
 }
 
 .series-description7{
+  max-width: 445px;
   animation-delay: 0.9s;
 }
 
 .series-description8{
+  max-width: 445px;
   animation-delay: 1.0s;
 }
 
@@ -386,6 +411,17 @@ body{
 
   .series{
     width: 80%;
+  }
+}
+
+@media (max-width: 950px){
+  .left-col,
+  .right-col
+  {
+      width: 100%;
+  }
+  .right-col{
+      padding-left: 0px;
   }
 }
 
