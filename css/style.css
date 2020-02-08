@@ -26,6 +26,7 @@ body{
   width: 95%;
   max-width: 1140px;
   margin:  auto;
+  overflow: hidden;
 }
 
 .header{
@@ -360,6 +361,16 @@ body{
   display: none;
 }
 
+@media (max-width: 700px){
+  .swiper-container{
+    width: 80%;
+  }
+
+  .series{
+    width: 80%;
+  }
+}
+
 @media (max-width: 540px){
   .menu-button{
     display: block;
@@ -457,10 +468,6 @@ body{
     margin-left: 0px;
   }
 
-  .swiper-container{
-    width: 80%;
-  }
-
   .main-content{
     margin-top: 196px;
   }
@@ -468,10 +475,7 @@ body{
   .main-title{
     font-size: 56px;
   }
-
-  .series{
-    width: 80%;
-  }
+  
 }
 
 @media (max-width: 360px){

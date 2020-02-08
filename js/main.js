@@ -5,7 +5,7 @@ var mySwiper = new Swiper('.swiper-container', {
     nextEl: '.arrow',
   },
   breakpoints: {
-    540 : {
+    650 : {
       slidesPerView: 2,
     },
 
@@ -23,7 +23,7 @@ menuButton.addEventListener('click', function (){
 })
 
 var radio = new Audio();
-radio.src = "../audio/Lutik.mp3";
+radio.src = "../audio/MainTheme.mp3";
 
 document.querySelector('.play').onclick = function()
 {
