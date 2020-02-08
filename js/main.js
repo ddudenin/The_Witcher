@@ -22,11 +22,12 @@ menuButton.addEventListener('click', function (){
   menu.classList.toggle('header-active');
 })
 
+
+var PlayButton = document.querySelector('.play');
 var radio = new Audio();
 radio.src = "../audio/MainTheme.mp3";
 
-document.querySelector('.play').onclick = function()
-{
+PlayButton.addEventListener('click', function(){
   if (radio.paused == true)
   {
     radio.play();
@@ -34,4 +35,4 @@ document.querySelector('.play').onclick = function()
   else{
     radio.pause();
   }
-}
+})
