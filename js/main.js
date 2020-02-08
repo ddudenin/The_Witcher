@@ -23,7 +23,7 @@ menuButton.addEventListener('click', function (){
 })
 
 var radio = new Audio();
-radio.src = "/audio/Lutik.mp3";
+radio.src = "../audio/Lutik.mp3";
 
 document.querySelector('.play').onclick = function()
 {
