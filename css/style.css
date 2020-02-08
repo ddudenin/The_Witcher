@@ -11,7 +11,6 @@ body{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-style: normal;
   color: #FFFFFF;
   min-height: 100vh;
   display: flex;
@@ -20,6 +19,7 @@ body{
   background-image: url('../img/background.jpg');
   background-repeat:  no-repeat;
   background-position:  top, right 20%;
+  background-attachment: fixed;
 }
 
 .container{
@@ -34,6 +34,7 @@ body{
   justify-content: space-between;
   padding-top: 60px;
   margin-bottom:  90px;
+  position: sticky;
 }
 
 .menu-list{
@@ -89,6 +90,58 @@ body{
   line-height: 150%;
   margin-bottom: 40px;
   animation-delay: 0.7s;
+}
+
+.series-content{
+  max-width: 458px;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: justify;
+  max-width: 445px;
+}
+
+.season-title{
+  font-family: 'MasonChronicles', serif;
+  font-size: 76px;
+  line-height: 89px;
+  margin-bottom: 10px;
+}
+
+.series-header{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.series-description1{
+  animation-delay: 0.3s;
+}
+
+.series-description2{
+  animation-delay: 0.4s;
+}
+
+.series-description3{
+  animation-delay: 0.5s;
+}
+
+.series-description4{
+  animation-delay: 0.6s;
+}
+
+.series-description5{
+  animation-delay: 0.7s;
+}
+
+.series-description6{
+  animation-delay: 0.8s;
+}
+
+.series-description7{
+  animation-delay: 0.9s;
+}
+
+.series-description8{
+  animation-delay: 1.0s;
 }
 
 .button{
@@ -174,22 +227,6 @@ body{
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
-}
-
-.series-1{
-  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/series/series1.jpg");
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.series-2{
-  background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url("../img/series/series2.jpg");
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .series-1{
