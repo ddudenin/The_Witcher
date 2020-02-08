@@ -24,8 +24,10 @@ menuButton.addEventListener('click', function (){
 
 
 var PlayButton = document.querySelector('.play');
+var audio = document.querySelector('.audio-src');
+
 var radio = new Audio();
-radio.src = "../audio/MainTheme.mp3";
+radio.src = audio.src;
 
 PlayButton.addEventListener('click', function(){
   if (radio.paused == true)
