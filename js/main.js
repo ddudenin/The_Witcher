@@ -25,13 +25,17 @@ menuButton.addEventListener('click', function (){
 
 var PlayButton = document.querySelector('.play');
 var PlayImg = document.querySelector('.play-img');
+var PauseImg = document.querySelector('.pause-img');
 var audio = document.querySelector('.audio-src');
 
 var radio = new Audio();
 radio.src = audio.src;
 
 PlayButton.addEventListener('click', function(){
-  PlayImg.classList.toggle('.pause');
+  PlayImg.classList.toggle('img-display');
+  PlayImg.classList.toggle('img-nodisplay');
+  PauseImg.classList.toggle('img-display');
+  PauseImg.classList.toggle('img-nodisplay');
   if (radio.paused == true)
   {
     radio.play();
