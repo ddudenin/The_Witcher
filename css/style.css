@@ -369,11 +369,13 @@ body{
   .menu-button-active:before{
     transform: rotate(45deg);
     margin-top: 0px;
+    z-index: 2;
   }
 
   .menu-button-active::after{
     transform: rotate(-45deg);
     margin-top: 0px;
+    z-index: 2;
   }
 
   .header{
@@ -384,7 +386,8 @@ body{
     top: 0px;
     background-color: #9d2929;
     width: 250px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+    z-index: 1;
   }
 
   .header-active{
