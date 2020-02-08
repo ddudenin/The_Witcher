@@ -31,13 +31,12 @@ var radio = new Audio();
 radio.src = audio.src;
 
 PlayButton.addEventListener('click', function(){
+  PlayImg.classList.toggle('.pause');
   if (radio.paused == true)
   {
-    PlayImg.src = "../img/pause.png"
     radio.play();
   }
   else{
-    PlayImg.src = "../img/play.svg"
     radio.pause();
   }
 })

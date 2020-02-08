@@ -11,7 +11,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
-  color: #FFFFFF;
+  color: #FFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ body{
 .container{
   width: 95%;
   max-width: 1140px;
-  margin:  auto;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -46,7 +46,7 @@ body{
 .menu-link{
   font-size: 14px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #FFF;
   text-decoration: none;
   margin-right: 24px;
 }
@@ -149,7 +149,7 @@ body{
   display: inline-block;
   background-color: #9E2929;
   border-radius: 8px;
-  color:#FFFFFF;
+  color:#FFF;
   border: none;
   padding: 22px 72px;
   text-decoration: none;
@@ -157,7 +157,7 @@ body{
 }
 
 .button:active{
-  color: FFFFFF;
+  color: #FFF;
 }
 
 .play{
@@ -189,6 +189,11 @@ body{
   left: -16px;
   top: -16px;
   animation: pulse 0.5s ease-in-out 2s infinite;
+}
+
+.pause{
+  background-image: url('../img/pause.png');
+  content: "Ведьмаку заплатите";
 }
 
 .main-content{
@@ -228,6 +233,11 @@ body{
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
+}
+
+.series-link{
+  text-decoration: none;
+  color: #FFF;
 }
 
 .series-1{
@@ -379,7 +389,7 @@ body{
     top: 40px;
     width: 30px;
     height: 2px;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     border: none;
     cursor: pointer;
   }
@@ -392,7 +402,7 @@ body{
     height: 2px;
     left: 0px;
     top: 0px;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     margin-top: -7px;
     transition: transform 0.2s;
   }
@@ -405,7 +415,7 @@ body{
     height: 2px;
     left: 0px;
     top: 0px;
-    background-color: #FFFFFF;
+    background-color: #FFF;
     margin-top: 7px;
     transition: transform 0.2s;
   }
