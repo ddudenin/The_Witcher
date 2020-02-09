@@ -28,24 +28,34 @@ var PlayImg = document.querySelector('.play-img');
 var PauseImg = document.querySelector('.pause-img');
 var audio = document.querySelector('.audio-src');
 
-var radio = new Audio();
-radio.src = audio.src;
-
 PlayButton.addEventListener('click', function(){
-  PlayImg.classList.toggle('img-display');
-  PlayImg.classList.toggle('img-nodisplay');
+  if (audio.paused){
+    audio.play();
 
-  PauseImg.classList.toggle('img-display');
-  PauseImg.classList.toggle('img-nodisplay');
-  
-  if (radio.paused)
-  {
-    radio.play();
+    if(!audio.classList.contains('img-display'))
+    {
+      audio.classList.toggle('img-display');
+      audio.classList.toggle('img-nodisplay');
+    }
   }
   else{
-    radio.pause();
+    audio.classList.toggle('img-display');
+    audio.classList.toggle('img-nodisplay');
+
+    audio.pause();
   }
 })
+
+audio.addEventListener('pause', PlayPause)
+audio.addEventListener('play', PlayPause)
+
+function PlayPause(){
+   PlayImg.classList.toggle('img-display');
+   PlayImg.classList.toggle('img-nodisplay');
+  
+   PauseImg.classList.toggle('img-display');
+   PauseImg.classList.toggle('img-nodisplay');
+}
 
 var Button = document.querySelector('.button');
 var Link = document.querySelector('.menu-list');

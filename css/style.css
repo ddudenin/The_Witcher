@@ -395,6 +395,10 @@ body{
     margin-left: 0px;
   }
 
+  .audio-src{
+    display: block;
+  }
+
 }
 
 .menu-button{
@@ -537,4 +541,6 @@ body{
   .series-scr{
     width: 340px;
   }
+
+
 }
