@@ -19,7 +19,6 @@ body{
   background-image: url('../img/background.jpg');
   background-repeat:  no-repeat;
   background-position:  top, right 20%;
-  /*background-attachment: fixed;*/
 }
 
 .container{
@@ -107,15 +106,13 @@ body{
     min-width: 350px;
     height: auto;
     box-sizing: border-box;
-    float: left;
-}
-
-.left-col{
     padding-right: 10px;
+    float: left;
 }
 
 .right-col{
     padding-left: 10px;
+
 }
 
 .season-title{
